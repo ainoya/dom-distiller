@@ -29,13 +29,13 @@ def main(argv):
   if templatepath:
     templatefile = open(templatepath, 'r')
   else:
-    print 'Please provide path to the template file'
+    print('Please provide path to the template file')
     return 1
 
   if inpath:
     infile = open(inpath, 'r')
   else:
-    print 'Reading input from stdin'
+    print('Reading input from stdin')
     infile = sys.stdin
 
   if outpath:

@@ -1,3 +1,5 @@
+.mypy_cache
+.git
 DomDistiller.war
 /buildtools
 /gwt-unitCache/
