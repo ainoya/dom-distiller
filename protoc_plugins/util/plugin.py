@@ -2,10 +2,10 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+import codecs
 import sys
 
-import plugin_protos
-import types
+from util import plugin_protos, types
 
 
 def Debug(data):
@@ -37,5 +37,5 @@ def GetProtoFileForFilename(filename):
 
 
 def ReadRequestFromStdin():
-  data = sys.stdin.read()
+  data = sys.stdin.buffer.read()
   return plugin_protos.PluginRequestFromString(data)

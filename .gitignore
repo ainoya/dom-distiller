@@ -9,3 +9,4 @@ DomDistiller.war
 .*.swp
 *.pyc
 junitvmwatcher*.properties
+node_modules

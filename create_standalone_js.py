@@ -65,7 +65,7 @@ def main(argv):
   if inpath:
     infile = open(inpath, 'r')
   else:
-    print 'Reading input from stdin'
+    print('Reading input from stdin')
     infile = sys.stdin
 
   if outpath:
