@@ -20,7 +20,7 @@ async function scrapeAndDistill(url: string) {
 
   // load the DOM Distiller script
   const distillerScript = fs.readFileSync(
-    path.resolve(__dirname, "../out/package/js/domdistiller.js"),
+    path.resolve(__dirname, "../out/domdistiller.js"),
     "utf8"
   );
   await page.evaluate(distillerScript);
