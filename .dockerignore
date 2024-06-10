@@ -1,0 +1,14 @@
+.mypy_cache
+.git
+DomDistiller.war
+/buildtools
+/gwt-unitCache/
+/out/
+/war/WEB-INF/
+/war/domdistiller
+/war/domdistillerjstest
+/war/*.JUnit/
+.*.swp
+*.pyc
+junitvmwatcher*.properties
+node_modules

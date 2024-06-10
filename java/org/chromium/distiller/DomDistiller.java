@@ -10,17 +10,18 @@ import org.chromium.distiller.proto.DomDistillerProtos.TimingInfo;
 import org.chromium.distiller.DomUtil;
 import org.chromium.distiller.StringUtil;
 
-import com.google.gwt.core.client.js.JsExport;
+import jsinterop.annotations.JsType;
+import jsinterop.annotations.JsMethod;
 import com.google.gwt.dom.client.Document;
 
-@JsExport("DomDistiller")
+@JsType
 public class DomDistiller {
-    @JsExport
+    @JsMethod
     public static DomDistillerProtos.DomDistillerResult apply() {
         return applyWithOptions(DomDistillerProtos.DomDistillerOptions.create());
     }
 
-    @JsExport
+    @JsMethod
     public static DomDistillerProtos.DomDistillerResult applyWithOptions(
             DomDistillerProtos.DomDistillerOptions options) {
         double startTime = DomUtil.getTime();
